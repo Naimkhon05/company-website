@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | GreenVisaGlobal</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <img src="images/logo.jpeg" alt="GreenVisaGlobal logo" class="logo" />
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button id="darkToggle">🌙</button>
+      </div>
+    </header>
+
+    <main id="main" class="contact-page">
+      <h1>Contact Us</h1>
+
+      <form class="contact-form">
+        <label for="name">Full Name *</label>
+        <input id="name" type="text" required />
+
+        <label for="email">Email Address *</label>
+        <input id="email" type="email" required />
+        <label for="case">What can we help you with? *</label>
+        <select id="case" required>
+          <option value="">-- Please choose an option --</option>
+          <option value="tourist">Tourist Visa (B1/B2)</option>
+          <option value="student">Student Visa (F1)</option>
+          <option value="greencard">Green Card Lottery</option>
+          <option value="consultation">Personal Consultation</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Your Message *</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 GreenVisaGlobal | All rights reserved</p>
+    </footer>
+
+    <script>
+      const toggleBtn = document.getElementById("darkToggle");
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>

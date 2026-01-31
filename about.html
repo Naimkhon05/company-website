@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | GreenVisaGlobal</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <img src="images/logo.jpeg" alt="GreenVisaGlobal logo" class="logo" />
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </header>
+
+    <main id="main" class="about-page">
+      <section class="about-hero">
+        <h1>About GreenVisaGlobal</h1>
+        <p>
+          We provide professional and transparent visa consultation services to
+          help individuals achieve their dream of traveling or moving to the
+          United States.
+        </p>
+      </section>
+
+      <section class="about-content">
+        <h2>Who We Are</h2>
+        <p>
+          GreenVisaGlobal is an independent visa assistance platform dedicated
+          to helping applicants prepare accurate, well-documented, and compliant
+          visa applications. Our mission is to reduce application errors and
+          improve interview confidence through professional guidance.
+        </p>
+
+        <h2>Our Mission</h2>
+        <p>
+          Our goal is to make visa preparation simple, transparent, and
+          stress-free. We believe every applicant deserves access to clear
+          information and ethical consultation.
+        </p>
+
+        <h2>Why Choose Us?</h2>
+        <ul>
+          <li>Clear and honest guidance throughout the process</li>
+          <li>Personalized consultation for every client</li>
+          <li>Strong focus on legal compliance and accuracy</li>
+          <li>Support for documentation preparation</li>
+          <li>Interview readiness strategies</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 GreenVisaGlobal | All rights reserved</p>
+    </footer>
+    <script>
+      const toggleBtn = document.getElementById("darkToggle");
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
